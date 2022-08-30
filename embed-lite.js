@@ -1,5 +1,5 @@
 var ApplicationEmbed = ApplicationEmbed || function (w, u) {
-    var AppPath = "./embed.json";
+    var AppPath = "https://sudarshanbairagi-taggbox.github.io/testing/embed.json";
     function randomID(length) {
         var result = '';
         var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
