@@ -1,0 +1,145 @@
+.tb_error_page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.tb_error_page_bg {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    opacity: .5;
+}
+
+.tb_error_page_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    min-height: 260px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04), 0 5px 14px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+}
+
+.tb_error_title {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(.5vh + .5vw + 16px);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tb_error_des {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #545454;
+    font-weight: 400;
+}
+
+.tb_error_highlight{
+    color: rgb(255, 64, 81);
+    font-weight: 600;
+}
+
+.tb_error_des a {
+    color: #ff4051;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tb_error_page_actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tb_error_action_list {
+    padding: 10px;
+}
+
+.tb_error_btn_primary, .tb_error_btn_secondary{
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    color: #2b2b2b;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    min-width: 140px;
+    text-decoration: none;
+    transition: color .15s ease,background-color .15s ease,border-color .15s ease,box-shadow .15s ease,-webkit-box-shadow .15s ease;
+}
+
+.tb_error_btn_primary{
+    color: #fff;
+    background-color: #ff4051;
+    border-color: #ff4051;
+}
+
+.tb_error_btn_secondary{
+    color: #2b2b2b;
+    background-color: transparent;
+    border-color: #2b2b2b;
+}
+
+.tb_error_btn_primary:hover, .tb_error_btn_primary:focus{
+    color: #fff;
+    background-color: #e23442;
+    border-color: #e23442;
+}
+.tb_error_btn_secondary:hover, .tb_error_btn_secondary:focus{
+    color: #fff;
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+}
+
+.tb_error_page_logo_ico {
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 30px;
+    background-size: contain;
+    width: 200px;
+}
+
+.tb_error_page_logo {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tb_error_onsite_btn{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}

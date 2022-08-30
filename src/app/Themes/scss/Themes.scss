@@ -1,0 +1,37 @@
+.tb_app_wrapper {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.tb__icon_default {
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tb_bold_txt__{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tb_text_links_:before,
+.tb_text_links_:after{
+    display: none !important;
+}
+
+@import "../NewsCard/scss/NewsCard.scss";
+@import "../ClassicPhoto/scss/ClassicPhoto.scss";
+@import "../ClassicCard/scss/ClassicCard.scss";
+@import "../ModernCard/scss/ModernCard.scss";
+@import "../SquarePhoto/scss/SquarePhoto.scss";
+@import "../HorizontalSlider/scss/HorizontalSlider.scss";
+@import "../HorizontalColumns/scss/HorizontalColumns.scss";
+@import "../WidgetTheme/scss/WidgetTheme.scss";
+@import "../GalleryPhoto/scss/GalleryPhoto.scss";
+@import "../SinglePost/scss/SinglePost.scss";
+@import "../HighlightTheme/scss/HighlightTheme.scss";
+@import "../StoryTheme/scss/StoryTheme.scss";
+@import "../Elements/scss/Elements.scss";

@@ -1,0 +1,232 @@
+.tb_nc_post_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tb_nc_post_wrapper{
+    width: 25%;
+    padding: 7.5px;
+}
+.tb_nc_post_wrap_in {
+    border:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tb_nc_post_in{
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.tb_nc_media_wrap{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tb_nc_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tb_nc_contant_wrapper {
+    padding: 10px;
+    font-family: Inter, sans-serif;
+}
+
+.tb_nc_author_wrapper {
+    margin-bottom: 10px;
+}
+
+.tb_nc_author {
+    width: calc(100% - 30px);
+}
+
+.tb_nc_author_profile {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-shrink: 0;
+    background-color: rgba(0,0,0,.2);
+}
+
+.tb_nc_authorname {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #2b2b2b;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left !important;
+}
+
+.tb_nc_author {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.tb_nc_author_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tb_nc_author_info {
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: calc(100% - 54px);
+    padding-right: 10px;
+}
+
+.tb_nc_post_info {
+    display: flex;
+    align-items: center;
+}
+
+.tb_nc_seprator {
+    height: 4px;
+    width: 4px;
+    min-width: 4px;
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    margin: 0 6px;
+    opacity: 0.8;
+    display: flex;
+    flex-shrink: 1;
+}
+
+.tb_nc_username, .tb_nc_time {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #2b2b2b;
+    font-weight: 500;
+    opacity: 0.8;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tb_nc_username{
+    max-width: 65%;
+}
+
+.tb_nc_time{
+    max-width: 35%;
+}
+
+.tb_nc_social_ {
+    font-size: 24px;
+}
+
+.tb_nc_post_in:hover .tb_share_wrapper{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.tb_nc_content, .tb_nc_rating_content {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+.tb_nc_content{
+    text-align: left;
+}
+
+.tb_nc_content .tb_text_links_, .tb_nc_rating_content .tb_text_links_ {
+    color: inherit !important;
+    text-decoration: underline !important;
+    display: inline;
+}
+
+.tb_nc_rating_content, .tb_nc_text_post {
+    text-align: center;
+}
+
+.tb_nc_text_post{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.tb_nc_text_decoration::before{
+    content: "\e909";
+    font-family: 'TaggboxSocialFonts';
+    margin-right: 12px;
+}
+
+.tb_nc_text_decoration::after{
+    content: "\e90a";
+    font-family: 'TaggboxSocialFonts';
+    margin-left: 12px;
+}
+
+.tb_nc_video_ico {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    z-index: 1;
+    color: #fff;
+    font-size: 12px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
+}
+
+.tb_nc_multi_images_ico {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #fff;
+    font-size: 17px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
+}
+
+.tb_nc_multi_images_ico_bottom {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    color: #fff;
+    font-size: 17px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.4));
+}
+
+.tb_nc_youtube_ico {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+.tb_nc_post_cta {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tb_nc_post_cta_btn {
+    padding: 8px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #000;
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+}

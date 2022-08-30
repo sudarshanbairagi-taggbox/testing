@@ -1,0 +1,19 @@
+.tb_filter_container{
+    padding: 10px;
+}
+
+.tb_filter_ico_default {
+    background-size: contain;
+    height: 22px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tb_color_youtube{
+    color: #FF0000;
+}
+@import '../FilterType/scss/CircularFilter.scss';
+@import '../FilterType/scss/RectangularFilter.scss';
+@import '../FilterType/scss/RoundEdgedFilter.scss';
+@import '../FilterType/scss/SquareFilter.scss';

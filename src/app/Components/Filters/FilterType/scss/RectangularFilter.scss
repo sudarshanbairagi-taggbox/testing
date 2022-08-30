@@ -1,0 +1,446 @@
+.tb_filter_rectangular_wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.tb_filter_rectangular_list{
+    padding: 6px;
+    position: relative;
+}
+
+.tb_filter_rectangular_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    color: #34495e;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    width: auto;
+    border-radius: 5px;
+    padding: 8px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+
+.tb_filter_rectangular_icon {
+    font-size: 18px;
+    line-height: 22px;
+    padding-right: 8px;
+    position: relative;
+}
+.tb_filter_rectangular_ico, .tb_color_icon__:before{
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.tb_filter_rectangular_icon:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 1;
+    background-color: #ff4051;
+    position: absolute;
+    opacity: .5;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.tb_filter_rectangular_button_text {
+    font-family: 'Inter', sans-serif;
+    padding-left: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tb_filter_rectangular_button.tb_filter_active, 
+.tb_filter_rectangular_button:hover, 
+.tb_filter_rectangular_button:focus{
+    background-color: #34495e;
+    color: #fff;
+}
+
+.tb_filter_rectangular_button:active .tb_filter_rectangular_icon,
+.tb_filter_rectangular_button.tb_filter_active .tb_filter_rectangular_icon, 
+.tb_filter_rectangular_button:hover .tb_filter_rectangular_icon, 
+.tb_filter_rectangular_button:focus .tb_filter_rectangular_icon{
+    color: #fff;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-users{
+    color: #ff4051;
+    border-color: #ff4051;
+}
+.tb-network-rectangular-icob-users .tb_filter_rectangular_icon:after {
+    background-color: #ff4051;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-users:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-users:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-users:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-users.tb_filter_active{
+    color: #fff;
+    background-color: #ff4051;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-twitter{
+    color: #29a9e1;
+    border-color: #29a9e1;
+}
+.tb-network-rectangular-ico-twitter .tb_filter_rectangular_icon:after {
+    background-color: #29a9e1;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-twitter:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-twitter:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-twitter:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-twitter.tb_filter_active{
+    color: #fff;
+    background-color: #29a9e1;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-instagram{
+    color: #E2306C;
+    border-color: #E2306C;
+}
+.tb-network-rectangular-ico-instagram .tb_filter_rectangular_icon:after {
+    background-color: #E2306C;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-instagram:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-instagram:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-instagram:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-instagram.tb_filter_active{
+    color: #fff;
+    background-color: #E2306C;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-facebook{
+    color: #1b74e4;
+    border-color: #1b74e4;
+}
+.tb-network-rectangular-ico-facebook .tb_filter_rectangular_icon:after {
+    background-color: #1b74e4;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-facebook:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-facebook:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-facebook:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-facebook.tb_filter_active{
+    color: #fff;
+    background-color: #1b74e4;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google{
+    color: #4081ED;
+    border-color: #4081ED;
+}
+.tb-network-rectangular-ico-google .tb_filter_rectangular_icon:after {
+    background-color: #4081ED;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google.tb_filter_active{
+    color: #fff;
+    background-color: #4081ED;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google:hover .tb_color_icon__:before, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google:focus .tb_color_icon__:before, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google:active .tb_color_icon__:before,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-google.tb_filter_active .tb_color_icon__:before{
+    color: #fff;
+}
+
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tiktok{
+    color: #000;
+    border-color: #000;
+}
+.tb-network-rectangular-ico-tiktok .tb_filter_rectangular_icon:after {
+    background-color: #000;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tiktok:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tiktok:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tiktok:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tiktok.tb_filter_active{
+    color: #fff;
+    background-color: #000;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-linkedin{
+    color: #0a66c2;
+    border-color: #0a66c2;
+}
+.tb-network-rectangular-ico-linkedin .tb_filter_rectangular_icon:after {
+    background-color: #0a66c2;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-linkedin:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-linkedin:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-linkedin:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-linkedin.tb_filter_active{
+    color: #fff;
+    background-color: #0a66c2;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-rss{
+    color: #f78422;
+    border-color: #f78422;
+}
+.tb-network-rectangular-ico-rss .tb_filter_rectangular_icon:after {
+    background-color: #f78422;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-rss:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-rss:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-rss:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-rss.tb_filter_active{
+    color: #fff;
+    background-color: #f78422;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube{
+    color: #FF0000;
+    border-color: #FF0000;
+}
+.tb-network-rectangular-ico-youtube .tb_filter_rectangular_icon:after {
+    background-color: #FF0000;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube.tb_filter_active{
+    color: #fff;
+    background-color: #FF0000;
+}
+
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:hover .tb-youtube-icon .tb_color_youtube_1:before, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:focus .tb-youtube-icon .tb_color_youtube_1:before, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:active .tb-youtube-icon .tb_color_youtube_1:before,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube.tb_filter_active .tb-youtube-icon .tb_color_youtube_1:before{
+    color: #fff;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:hover .tb-youtube-icon .tb_color_youtube_2:before, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:focus .tb-youtube-icon .tb_color_youtube_2:before, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube:active .tb-youtube-icon .tb_color_youtube_2:before,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-youtube.tb_filter_active .tb-youtube-icon .tb_color_youtube_2:before{
+    color: #FF0000;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vimeo-square{
+    color: #1eb8eb;
+    border-color: #1eb8eb;
+}
+.tb-network-rectangular-ico-vimeo-square .tb_filter_rectangular_icon:after {
+    background-color: #1eb8eb;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vimeo-square:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vimeo-square:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vimeo-square:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vimeo-square.tb_filter_active{
+    color: #fff;
+    background-color: #1eb8eb;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-workplace{
+    color: #4767AB;
+    border-color: #4767AB;
+}
+.tb-network-rectangular-ico-workplace .tb_filter_rectangular_icon:after {
+    background-color: #4767AB;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-workplace:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-workplace:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-workplace:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-workplace.tb_filter_active{
+    color: #fff;
+    background-color: #4767AB;
+}
+
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-onsite-upload{
+    color: #613983;
+    border-color: #613983;
+}
+.tb-network-rectangular-ico-onsite-upload .tb_filter_rectangular_icon:after {
+    background-color: #613983;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-onsite-upload:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-onsite-upload:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-onsite-upload:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-onsite-upload.tb_filter_active{
+    color: #fff;
+    background-color: #613983;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tumblr{
+    color: #36465d;
+    border-color: #36465d;
+}
+.tb-network-rectangular-ico-tumblr .tb_filter_rectangular_icon:after {
+    background-color: #36465d;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tumblr:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tumblr:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tumblr:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-tumblr.tb_filter_active{
+    color: #fff;
+    background-color: #36465d;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-pinterest{
+    color: #E60022;
+    border-color: #E60022;
+}
+.tb-network-rectangular-ico-pinterest .tb_filter_rectangular_icon:after {
+    background-color: #E60022;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-pinterest:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-pinterest:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-pinterest:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-pinterest.tb_filter_active{
+    color: #fff;
+    background-color: #E60022;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-flickr{
+    color: #006ADD;
+    border-color: #006ADD;
+}
+.tb-network-rectangular-ico-flickr .tb_filter_rectangular_icon:after {
+    background-color: #006ADD;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-flickr:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-flickr:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-flickr:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-flickr.tb_filter_active{
+    color: #fff;
+    background-color: #006ADD;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yelp{
+    color: #be362e;
+    border-color: #be362e;
+}
+.tb-network-rectangular-ico-yelp .tb_filter_rectangular_icon:after {
+    background-color: #be362e;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yelp:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yelp:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yelp:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yelp.tb_filter_active{
+    color: #fff;
+    background-color: #be362e;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yammer{
+    color: #0078D4;
+    border-color: #0078D4;
+}
+.tb-network-rectangular-ico-yammer .tb_filter_rectangular_icon:after {
+    background-color: #0078D4;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yammer:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yammer:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yammer:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-yammer.tb_filter_active{
+    color: #fff;
+    background-color: #0078D4;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-slack{
+    color: #510d4e;
+    border-color: #510d4e;
+}
+.tb-network-rectangular-ico-slack .tb_filter_rectangular_icon:after {
+    background-color: #510d4e;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-slack:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-slack:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-slack:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-slack.tb_filter_active{
+    color: #fff;
+    background-color: #510d4e;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-airbnb{
+    color: #ff385c;
+    border-color: #ff385c;
+}
+.tb-network-rectangular-ico-airbnb .tb_filter_rectangular_icon:after {
+    background-color: #ff385c;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-airbnb:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-airbnb:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-airbnb:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-airbnb.tb_filter_active{
+    color: #fff;
+    background-color: #ff385c;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-soundcloud{
+    color: #FC5502;
+    border-color: #FC5502;
+}
+.tb-network-rectangular-ico-soundcloud .tb_filter_rectangular_icon:after {
+    background-color: #FC5502;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-soundcloud:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-soundcloud:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-soundcloud:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-soundcloud.tb_filter_active{
+    color: #fff;
+    background-color: #FC5502;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-giphy{
+    color: #000000;
+    border-color: #000000;
+}
+.tb-network-rectangular-ico-giphy .tb_filter_rectangular_icon:after {
+    background-color: #000000;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-giphy:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-giphy:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-giphy:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-giphy.tb_filter_active{
+    color: #fff;
+    background-color: #000000;
+}
+
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vk{
+    color: #0077ff;
+    border-color: #0077ff;
+}
+.tb-network-rectangular-ico-vk .tb_filter_rectangular_icon:after {
+    background-color: #0077ff;
+}
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vk:hover, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vk:focus, 
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vk:active,
+.tb_filter_rectangular_button.tb-network-rectangular-ico-vk.tb_filter_active{
+    color: #fff;
+    background-color: #0077ff;
+}
+
+.tb_filter_rectangular_button:hover .tb_filter_rectangular_ico, 
+.tb_filter_rectangular_button:focus .tb_filter_rectangular_ico, 
+.tb_filter_rectangular_button:active .tb_filter_rectangular_ico,
+.tb_filter_rectangular_button.tb_filter_active .tb_filter_rectangular_ico{
+    color: #fff;
+}
+
+.tb_filter_rectangular_button.tb_filter_active .tb_filter_rectangular_icon:after, 
+.tb_filter_rectangular_button:focus .tb_filter_rectangular_icon:after, 
+.tb_filter_rectangular_button:hover .tb_filter_rectangular_icon:after, 
+.tb_filter_rectangular_button:active .tb_filter_rectangular_icon .tb_filter_rectangular_icon:after {
+    background-color: #fff;
+}

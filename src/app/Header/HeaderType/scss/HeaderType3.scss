@@ -1,0 +1,134 @@
+.tb_header3_row__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.tb_header3_column_logo__, 
+.tb_header3_column_icons__, 
+.tb_header3_column_content__{
+    max-width: 33.33%;
+    height: 100%;
+    padding: 0 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tb_header3_column_icons__{
+    justify-content: flex-end;
+}
+
+
+.tb_header3_logo__ {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding: 12px 0;
+    max-width: 400px;
+}
+
+.tb_header3_content__{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tb_header3_logo_img__ {
+    max-height: 100%;
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.tb_header3_social_icons__ {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: auto;
+    position: relative;
+    z-index: 2;
+}
+.tb_header3_social_icon_list__{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    min-width: 30px;
+    flex-shrink: 0;
+}
+.tb_header3_social_icon_list__{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.tb_header3_social_icon_list__[tb-data-icon="facebook"]{
+    border-color: #3e5c9a;
+}
+.tb_header3_social_icon_list__[tb-data-icon="twitter"]{
+    border-color: #29a9e1;
+}
+.tb_header3_social_icon_list__[tb-data-icon="instagram"]{
+    border-color: #E2306C;
+}
+
+.tb_header3_social_icon__ {
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.tb_header3_social_icon__ {
+    font-size: 18px;
+    text-align: center;
+}
+
+.tb_header3_subtitle__ {
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.tb_header3_title__ {
+    font-size: 22px;
+    color: #fff;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+.tb_header3_column_icons__ {
+    display: none;
+}
+
+.tb_header3_column_logo__ {
+    max-width: 35%;
+    padding: 0 5%;
+}
+
+.tb_header3_column_content__ {
+    max-width: 65%;
+    padding: 0 5%;
+}
+.tb_header3_content__ {
+    align-items: flex-end;
+}
+}

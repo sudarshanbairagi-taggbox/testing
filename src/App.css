@@ -1,0 +1,8 @@
+.tb_app_container *,
+.tb_app_container *::before,
+.tb_app_container *::after {
+  box-sizing: border-box;
+}
+.tb_app_container {
+    line-height: 1.5;
+}

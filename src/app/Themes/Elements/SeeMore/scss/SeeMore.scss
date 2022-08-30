@@ -1,0 +1,63 @@
+.tb_see_more_btn_wrap{
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tb_see_more_btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #2b2b2b;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #2b2b2b;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    min-width: 115px;
+    min-height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tb_see_more_btn.tb_more_btn_loading{
+    padding-right: 44px;
+    min-width: auto;
+}
+.tb_more_btn_loading:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border: 2px solid #000;
+    border-right: 2px solid transparent;
+    left: auto;
+    right: 13px;
+    display: flex;
+    -webkit-animation: tb_btn_animation-spinner 0.5s linear infinite;
+    animation: tb_btn_animation-spinner 0.5s linear infinite;
+}
+
+@-webkit-keyframes tb_btn_animation-spinner {
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes tb_btn_animation-spinner {
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }

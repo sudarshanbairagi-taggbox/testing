@@ -1,0 +1,26 @@
+@import "../HeaderType/scss/HeaderType2.scss";
+@import "../HeaderType/scss/HeaderType3.scss";
+@import "../HeaderType/scss/HeaderType4.scss";
+@import "../HeaderType/scss/HeaderType5.scss";
+@import "../HeaderType/scss/HeaderTypeCustom.scss";
+
+.tb_wall_header__ {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  line-height: 1.5;
+}
+
+.tb_wall_header_wrap__ {
+  background-size: cover;
+  background-position: center top;
+  height: 100px;
+}
+

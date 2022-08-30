@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#taggbox_main *,
+#taggbox_main *::before,
+#taggbox_main *::after {
+  box-sizing: border-box;
+}
+
+.taggbox{
+  overflow: auto;
+}
+
+.tb_app_container *,
+.tb_app_container *::before,
+.tb_app_container *::after {
+  box-sizing: border-box;
+}
+
+.tb_app_container{
+  width: 100%;
+}
+
+.tb_app_container a{
+  text-decoration: none !important;
+  color: #2b2b2b;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+.tb_text_hashtag {
+    display: inline;
+}
+
+.tb_app_container [tabindex="-1"]:focus, .tb_app_container [tabindex="-1"]:hover, .tb_app_container [tabindex="-1"]:active {
+  outline: 0;
+  box-shadow: none;
+}
+
+@import "./scss/InterFonts.scss";
+
+@import "./scss/IconDefaultColor.scss";
+
+@import "./scss/SocialIcons.scss";
+
+@import "./app/Header/scss/Header.scss";
+
+@import "./app/Components/scss/Component.scss";
+
+@import "./app/Themes/scss/Themes.scss";
+
+@import "./scss/googleFonts.scss";
+
+ 
+
+
+
+

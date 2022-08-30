@@ -1,0 +1,39 @@
+.tb_social_action__ {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 6px;
+}
+
+.tb_social_action__list {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+
+.tb_social_action__list:last-child{
+    border-right: none;
+}
+
+.tb_social_action__ico_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.tb_social_action_counts__ {
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.tb_social_action_ico__{
+    font-size: 16px;
+}
